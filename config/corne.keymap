@@ -35,7 +35,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1  &kp N2        &kp N3    &kp N4         &kp N5       &kp N6   &kp N7    &kp N8    &kp N9     &kp N0  &bt BT_CLR
+&kp TAB    &trans  &trans        &trans    &trans         &trans       &trans   &trans    &trans    &trans     &trans  &bt BT_CLR
 &kp DEL    &trans  &kp RA(LEFT)  &kp UP    &kp RA(RIGHT)  &trans       &trans   &trans    &kp UP    &trans     &trans  &trans
 &kp LSHFT  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &to 3        &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp ESC
                                  &kp LGUI  &trans         &kp SPACE    &kp RET  &trans    &kp RALT
@@ -51,7 +51,7 @@
 
             bindings = <
 &kp F1     &kp F2  &kp F3  &kp F4    &kp F5   &kp F6       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR        &kp RPAR         &kp BSPC
-&kp F7     &kp F8  &kp F9  &kp F10   &kp F11  &kp F12      &kp MINUS  &kp EQUAL  &trans           &kp LBKT        &kp RBKT         &trans
+&kp F7     &kp F8  &kp F9  &kp F10   &kp F11  &kp F12      &kp MINUS  &kp EQUAL  &to 4            &kp LBKT        &kp RBKT         &trans
 &kp LSHFT  &trans  &trans  &trans    &trans   &trans       &kp UNDER  &kp PLUS   &trans           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ESC
                            &kp LGUI  &trans   &kp SPACE    &kp RET    &trans     &kp RALT
             >;
@@ -68,10 +68,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp BSPC   &kp PLUS      &kp MINUS     &kp N7   &kp N8  &kp N9       &kp N7   &kp N8  &kp N9   &kp PLUS      &kp MINUS     &kp BSPC
+&to 0      &kp FSLH      &kp STAR      &kp N4   &kp N5  &kp N6       &kp N4   &kp N5  &kp N6   &kp FSLH      &kp STAR      &to 0
+&kp EQUAL  &kp LS(LPAR)  &kp LS(RPAR)  &kp N1   &kp N2  &kp N3       &kp N1   &kp N2  &kp N3   &kp LS(LPAR)  &kp LS(RPAR)  &kp EQUAL
+                                       &kp DOT  &kp N0  &kp LSHFT    &kp RET  &kp N0  &kp DOT
             >;
         };
     };
