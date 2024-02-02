@@ -45,6 +45,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <16 19>;
         };
+
+        mousemode {
+            bindings = <&to 4>;
+            key-positions = <36 38>;
+        };
     };
 
     keymap {
@@ -101,6 +106,15 @@
 &kp EQUAL                               &kp FSLH   &kp N4  &kp N5  &kp N6  &kp STAR    &kp STAR  &kp N4  &kp N5   &kp N6  &kp FSLH   &kp EQUAL
 &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp DOT    &kp N1  &kp N2  &kp N3  &kp N0      &kp N0    &kp N1  &kp N2   &kp N3  &kp DOT    &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
                                                            &kp N0  &trans  &trans      &trans    &trans  &kp DOT
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans    &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans     &trans     &trans      &trans  &trans  &trans
             >;
         };
     };
