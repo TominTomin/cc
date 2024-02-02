@@ -16,7 +16,7 @@
             key-positions = <38 39>;
         };
 
-        tofffd {
+        tofff {
             bindings = <&to 2>;
             key-positions = <41 36>;
         };
