@@ -15,6 +15,36 @@
             bindings = <&to 0>;
             key-positions = <38 39>;
         };
+
+        tofff {
+            bindings = <&to 2>;
+            key-positions = <41 36>;
+        };
+
+        tonav {
+            bindings = <&to 1>;
+            key-positions = <24 36>;
+        };
+
+        tonum {
+            bindings = <&to 3>;
+            key-positions = <24 38>;
+        };
+
+        othernum {
+            bindings = <&to 3>;
+            key-positions = <35 39>;
+        };
+
+        othernav {
+            bindings = <&to 1>;
+            key-positions = <35 41>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 19>;
+        };
     };
 
     keymap {
@@ -43,7 +73,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans                      &kp UP                      &trans                          &to 3     &to 3   &trans                                  &kp UP                      &trans                          &trans  &trans
+&trans  &trans  &trans                      &kp UP                      &trans                          &trans    &trans  &trans                                  &kp UP                      &trans                          &trans  &trans
 &trans  &trans  &kp LEFT                    &kp DOWN                    &kp RIGHT                       &trans    &trans  &kp LEFT                                &kp DOWN                    &kp RIGHT                       &trans  &trans
 &trans  &trans  &mt RIGHT_PARENTHESIS LPAR  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &trans    &trans  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &trans  &trans
                                             &trans                      &trans                          &trans    &trans  &trans                                  &trans
