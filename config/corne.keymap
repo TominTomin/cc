@@ -17,39 +17,44 @@
             key-positions = <38 39>;
         };
 
-        tofff {
-            bindings = <&to 2>;
-            key-positions = <41 36>;
-        };
-
-        tonav {
-            bindings = <&to 1>;
-            key-positions = <24 36>;
-        };
-
-        tonum {
-            bindings = <&to 3>;
-            key-positions = <24 38>;
-        };
-
-        othernum {
-            bindings = <&to 3>;
-            key-positions = <35 39>;
-        };
-
-        othernav {
-            bindings = <&to 1>;
-            key-positions = <35 41>;
-        };
-
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 19>;
         };
 
         mousemode {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <36 38>;
+        };
+
+        tognm {
+            bindings = <&tog 3>;
+            key-positions = <39 6>;
+        };
+
+        leftnumb {
+            bindings = <&tog 3>;
+            key-positions = <38 5>;
+        };
+
+        rightnav {
+            bindings = <&tog 1>;
+            key-positions = <39 18>;
+        };
+
+        leftnav {
+            bindings = <&tog 1>;
+            key-positions = <38 17>;
+        };
+
+        leftfffff {
+            bindings = <&tog 2>;
+            key-positions = <38 0>;
+        };
+
+        rightfff {
+            bindings = <&tog 2>;
+            key-positions = <39 11>;
         };
     };
 
@@ -65,7 +70,7 @@
 
             bindings = <
 &mt DEL TAB  &kp Q  &kp W  &kp E     &kp R  &kp T                     &kp Y                 &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT    &kp A  &kp S  &kp D     &kp F  &kp G                     &kp H                 &kp J  &kp K      &kp L    &kp SEMI  &kp ESC
+&kp LSHFT    &kp A  &kp S  &kp D     &kp F  &kp G                     &kp H                 &kp J  &kp K      &kp L    &kp SEMI  &mt ESC SPACE
 &kp LCTRL    &kp Z  &kp X  &kp C     &kp V  &kp B                     &kp N                 &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
                            &kp LGUI  &mo 1  &mt LEFT_CONTROL SPACE    &mt LEFT_SHIFT ENTER  &mo 3  &kp RALT
             >;
