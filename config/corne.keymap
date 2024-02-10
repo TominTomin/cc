@@ -113,10 +113,10 @@
 
         mouse {
             bindings = <
-&mt DELETE BACKSPACE  &trans  &trans    &kp UP     &trans     &mt LA(F4) ENTER    &trans  &trans    &kp UP     &trans     &trans     &trans
-&trans                &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &trans              &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
-&trans                &trans  &trans    &trans     &trans     &trans              &trans  &trans    &trans     &trans     &mkp MCLK  &mkp LCLK
-                                        &mkp RCLK  &mkp MCLK  &mkp LCLK           &trans  &trans    &mkp RCLK
+&mt DELETE BACKSPACE  &trans  &trans                                  &kp UP                      &trans                          &mt LA(F4) ENTER    &trans  &trans    &kp UP     &trans     &trans     &trans
+&trans                &trans  &kp LEFT                                &kp DOWN                    &kp RIGHT                       &trans              &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
+&trans                &trans  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &trans              &trans  &trans    &trans     &trans     &mkp MCLK  &mkp LCLK
+                                                                      &mkp RCLK                   &mkp MCLK                       &mkp LCLK           &trans  &trans    &mkp RCLK
             >;
         };
 
