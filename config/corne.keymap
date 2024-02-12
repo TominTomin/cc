@@ -84,19 +84,19 @@
 
         numbers {
             bindings = <
-&trans  &trans   &mt AMPERSAND KP_NUMBER_7    &mt ASTERISK KP_NUMBER_8  &mt LEFT_PARENTHESIS KP_NUMBER_9  &mt RIGHT_PARENTHESIS KP_NUMBER_0    &mt ASTERISK SLASH  &kp N7  &kp N8  &kp N9  &kp N0    &trans
-&trans  &trans   &mt DOLLAR KP_NUMBER_4       &mt PERCENT KP_NUMBER_5   &mt CARET KP_NUMBER_6             &mt UNDER MINUS                      &mt UNDER MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH  &trans
-&trans  &kp DOT  &mt EXCLAMATION KP_NUMBER_1  &mt AT_SIGN KP_NUMBER_2   &mt HASH KP_NUMBER_3              &mt PLUS EQUAL                       &mt PLUS EQUAL      &kp N1  &kp N2  &kp N3  &kp DOT   &trans
-                                              &trans                    &trans                            &trans                               &trans              &trans  &trans
+&mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt ASTERISK SLASH  &mt AMPERSAND KP_NUMBER_7    &mt ASTERISK KP_NUMBER_8  &mt LEFT_PARENTHESIS KP_NUMBER_9  &mt RIGHT_PARENTHESIS KP_NUMBER_0    &mt ASTERISK SLASH  &mt AMPERSAND N7     &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &trans
+&mt RIGHT_BRACE LEFT_BRACE              &mt UNDER MINUS     &mt DOLLAR KP_NUMBER_4       &mt PERCENT KP_NUMBER_5   &mt CARET KP_NUMBER_6             &kp COLON                            &mt UNDER MINUS     &mt DOLLAR NUMBER_4  &mt PERCENT N5        &mt CARET NUMBER_6       &kp COLON                 &mt GREATER_THAN LESS_THAN
+&mt RIGHT_BRACKET LEFT_BRACKET          &mt PLUS EQUAL      &mt EXCLAMATION KP_NUMBER_1  &mt AT_SIGN KP_NUMBER_2   &mt HASH KP_NUMBER_3              &mt PLUS EQUAL                       &mt PLUS EQUAL      &mt EXCL NUMBER_1    &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &kp DOT                   &trans
+                                                                                         &trans                    &trans                            &trans                               &trans              &trans               &trans
             >;
         };
 
         mouse {
             bindings = <
-&mt DELETE BACKSPACE  &trans  &trans                                  &kp UP                      &trans                          &mt LA(F4) ENTER    &trans  &trans    &kp UP     &trans     &trans     &trans
-&trans                &trans  &kp LEFT                                &kp DOWN                    &kp RIGHT                       &trans              &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
-&trans                &trans  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &trans              &trans  &trans    &trans     &trans     &mkp MCLK  &mkp LCLK
-                                                                      &mkp RCLK                   &mkp MCLK                       &mkp LCLK           &trans  &trans    &mkp RCLK
+&mt DELETE BACKSPACE  &trans  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &mt LA(F4) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &trans
+&trans                &trans  &kp LEFT      &kp DOWN   &kp RIGHT      &trans              &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
+&trans                &trans  &kp LC(X)     &kp LC(C)  &kp LC(V)      &mkp MCLK           &kp K_MUTE         &trans    &trans     &trans     &mkp MCLK  &mkp LCLK
+                                            &mkp RCLK  &mkp MCLK      &mkp LCLK           &trans             &trans    &mkp RCLK
             >;
         };
 
