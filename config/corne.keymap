@@ -75,6 +75,8 @@
             label = "NEW_BEHAVIOR";
             #binding-cells = <0>;
             bindings = <&mt LEFT_CONTROL SPACE>, <&kp RET>;
+
+            tapping-term-ms = <250>;
         };
 
         backspace: backspace {
@@ -82,6 +84,8 @@
             label = "BACKSPACE";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <250>;
         };
 
         enter: enter {
@@ -89,6 +93,8 @@
             label = "ENTER";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp ENTER>;
+
+            tapping-term-ms = <250>;
         };
     };
 
