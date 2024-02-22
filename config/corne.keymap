@@ -18,26 +18,6 @@
             key-positions = <38 39>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 19>;
-        };
-
-        mousemode {
-            bindings = <&tog 2>;
-            key-positions = <36 38>;
-        };
-
-        tognm {
-            bindings = <&tog 1>;
-            key-positions = <39 6>;
-        };
-
-        leftnumb {
-            bindings = <&tog 1>;
-            key-positions = <38 5>;
-        };
-
         leftfffff {
             bindings = <&tog 4>;
             key-positions = <38 0>;
@@ -46,11 +26,6 @@
         rightfff {
             bindings = <&tog 4>;
             key-positions = <39 11>;
-        };
-
-        othermousemodessss {
-            bindings = <&tog 2>;
-            key-positions = <39 41>;
         };
 
         bluyee {
@@ -70,13 +45,13 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        spacecontrolrtn: spacecontrolrtn {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "SPACECONTROLRTN";
             #binding-cells = <0>;
             bindings = <&mt LEFT_CONTROL SPACE>, <&kp RET>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <350>;
         };
 
         backspace: backspace {
@@ -109,10 +84,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt DEL TAB  &kp Q  &kp W  &kp E     &kp R  &kp T                     &kp Y                 &kp U  &kp I      &kp O    &kp P     &mt DEL BACKSPACE
-&kp LSHFT    &kp A  &kp S  &kp D     &kp F  &kp G                     &kp H                 &kp J  &kp K      &kp L    &kp SEMI  &mt ESC SPACE
-&kp LCTRL    &kp Z  &kp X  &kp C     &kp V  &kp B                     &kp N                 &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                           &kp LGUI  &mo 2  &mt LEFT_CONTROL SPACE    &mt LEFT_SHIFT ENTER  &mo 1  &kp RALT
+&none  &mt DEL Q  &kp W  &kp E     &kp R  &mt ESCAPE T        &kp Y                 &kp U       &kp I          &kp O    &mt BACKSPACE P   &none
+&none  &mt TAB A  &kp S  &kp D     &kp F  &kp G               &kp H                 &backspace  &kp K          &kp L    &kp SEMI          &none
+&none  &kp Z      &kp X  &kp C     &kp V  &kp B               &kp N                 &kp M       &mt SQT COMMA  &kp DOT  &mt ESCAPE SLASH  &none
+                         &kp LGUI  &mo 2  &spacecontrolrtn    &mt LEFT_SHIFT ENTER  &mo 1       &kp RALT
             >;
         };
 
@@ -154,10 +129,10 @@
 
         layer_5dd {
             bindings = <
-&none  &kp Q      &kp W  &kp E   &kp R   &kp T            &kp Y   &kp U       &kp I      &kp O    &kp P     &none
-&none  &mt TAB A  &kp S  &kp D   &enter  &kp G            &kp H   &backspace  &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z      &kp X  &kp C   &kp V   &kp B            &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &trans
-                         &trans  &tog 2  &new_behavior    &trans  &tog 1      &trans
+&none  &kp Q      &kp W  &kp E   &kp R   &kp T               &kp Y   &kp U       &kp I      &kp O    &kp P     &none
+&none  &mt TAB A  &kp S  &kp D   &enter  &kp G               &kp H   &backspace  &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z      &kp X  &kp C   &kp V   &kp B               &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &trans  &tog 2  &spacecontrolrtn    &trans  &tog 1      &trans
             >;
         };
     };
