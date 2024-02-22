@@ -83,6 +83,13 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp BACKSPACE>;
         };
+
+        enter: enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp ENTER>;
+        };
     };
 
     keymap {
@@ -141,10 +148,10 @@
 
         layer_5dd {
             bindings = <
-&trans  &kp Q      &kp W  &kp E   &kp R   &kp T            &kp Y   &kp U       &kp I      &kp O    &kp P     &trans
-&trans  &mt TAB A  &kp S  &kp D   &kp F   &kp G            &kp H   &backspace  &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z      &kp X  &kp C   &kp V   &kp B            &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &trans
-                          &trans  &tog 2  &new_behavior    &trans  &tog 1      &trans
+&none  &kp Q      &kp W  &kp E   &kp R   &kp T            &kp Y   &kp U       &kp I      &kp O    &kp P     &none
+&none  &mt TAB A  &kp S  &kp D   &enter  &kp G            &kp H   &backspace  &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z      &kp X  &kp C   &kp V   &kp B            &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &trans  &tog 2  &new_behavior    &trans  &tog 1      &trans
             >;
         };
     };
