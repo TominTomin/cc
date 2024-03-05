@@ -18,24 +18,9 @@
             key-positions = <38 39>;
         };
 
-        leftfffff {
-            bindings = <&tog 4>;
-            key-positions = <38 1>;
-        };
-
-        rightfff {
-            bindings = <&tog 4>;
-            key-positions = <39 10>;
-        };
-
         bluyee {
             bindings = <&to 3>;
             key-positions = <1 10>;
-        };
-
-        tempf {
-            bindings = <&mo 4>;
-            key-positions = <37 40>;
         };
 
         esc {
@@ -148,7 +133,7 @@
 
         layeroflay {
             bindings = <
-&trans  &to 5   &to 4         &to 3             &to 2           &to 1           &to 1         &to 2           &to 3             &to 4         &to 5   &trans
+&trans  &to 5   &to 4         &none             &to 2           &to 1           &to 1         &to 2           &none             &to 4         &to 5   &trans
 &trans  &trans  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_WIN    &sk LEFT_WIN  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans  &kp BACKSPACE
 &trans  &trans  &trans        &trans            &trans          &trans          &trans        &trans          &trans            &trans        &trans  &trans
                               &trans            &to 0           &trans          &trans        &to 0           &trans
