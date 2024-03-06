@@ -41,35 +41,6 @@
         };
     };
 
-    behaviors {
-        spacecontrolrtn: spacecontrolrtn {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACECONTROLRTN";
-            #binding-cells = <0>;
-            bindings = <&mt LEFT_CONTROL SPACE>, <&kp RET>;
-
-            tapping-term-ms = <200>;
-        };
-
-        backspace: backspace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACKSPACE";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <250>;
-        };
-
-        enter: enter {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ENTER";
-            #binding-cells = <0>;
-            bindings = <&kp F>, <&kp ENTER>;
-
-            tapping-term-ms = <250>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,7 +55,7 @@
 &none    &kp Q  &kp W  &kp E     &kp R  &kp T                     &kp Y                 &kp U  &kp I          &kp O    &kp P      &none
 &kp TAB  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp H                 &kp J  &kp K          &kp L    &kp SEMI   &kp LC(BACKSPACE)
 &none    &kp Z  &kp X  &kp C     &kp V  &kp B                     &kp N                 &kp M  &mt SQT COMMA  &kp DOT  &kp SLASH  &none
-                       &kp LGUI  &sl 2  &mt LEFT_CONTROL SPACE    &mt LEFT_SHIFT ENTER  &mo 1  &kp RALT
+                       &kp LGUI  &mo 2  &mt LEFT_CONTROL SPACE    &mt LEFT_SHIFT ENTER  &mo 1  &kp RALT
             >;
         };
 
