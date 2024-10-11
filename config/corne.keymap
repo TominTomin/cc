@@ -75,7 +75,7 @@
 
         nav {
             bindings = <
-&none    &none   &kp LA(LEFT)  &kp UP            &kp LA(RIGHT)   &mt LA(F4) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &none
+&none    &to 7   &kp LA(LEFT)  &kp UP            &kp LA(RIGHT)   &mt LA(F4) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &none
 &kp DEL  &trans  &kp LEFT      &kp DOWN          &kp RIGHT       &sl 5               &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &kp DEL
 &none    &trans  &sk LEFT_WIN  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_ALT        &kp K_MUTE         &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK  &none
                                &mkp RCLK         &mkp MCLK       &mkp LCLK           &trans             &trans    &trans
@@ -115,6 +115,15 @@
 &trans  &trans  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_WIN    &sk LEFT_WIN  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans  &kp BACKSPACE
 &trans  &trans  &trans        &trans            &trans          &trans          &trans        &trans          &trans            &trans        &trans  &trans
                               &trans            &to 0           &trans          &trans        &to 0           &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans   &to 0           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans     &trans   &kp LA(LEFT)  &kp UP    &kp LA(DOWN)  &to 0           &trans
+&kp DEL  &trans          &kp LEFT      &kp DOWN  &kp RIGHT      &trans     &trans   &kp LEFT      &kp DOWN  &kp RIGHT     &trans          &kp DEL
+&trans   &kp LEFT_SHIFT  &kp LC(X)     &trans    &kp LC(V)      &trans     &trans   &kp LC(X)     &trans    &kp LC(V)     &kp LEFT_SHIFT  &trans
+                                       &trans    &trans         &kp RET    &kp RET  &trans        &trans
             >;
         };
     };
