@@ -66,6 +66,11 @@
             bindings = <&kp DEL>;
             key-positions = <20 21>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
