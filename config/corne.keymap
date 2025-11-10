@@ -84,10 +84,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R  &kp T             &kp Y                 &kp U  &kp I          &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F  &kp G             &kp H                 &kp J  &kp K          &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V  &kp B             &kp N                 &kp M  &mt SQT COMMA  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &mo 2  &mt LGUI SPACE    &mt LEFT_SHIFT ENTER  &mo 1  &kp RALT
+&none  &kp Q        &kp W       &kp E             &kp R             &kp T             &kp Y                 &kp U              &kp I                &kp O       &kp P           &none
+&none  &mt LCTRL A  &mt LALT S  &mt LGUI D        &mt F LEFT_SHIFT  &kp G             &kp H                 &mt J RIGHT_SHIFT  &mt K RIGHT_COMMAND  &mt L RALT  &mt SEMI RCTRL  &none
+&none  &kp Z        &kp X       &kp C             &kp V             &kp B             &kp N                 &kp M              &mt SQT COMMA        &kp DOT     &kp SLASH       &none
+                                &mt TAB CAPSLOCK  &lt 2 ENTER       &mt LGUI SPACE    &mt LEFT_SHIFT ENTER  &lt 1 BACKSPACE    &kp ESCAPE
             >;
         };
 
