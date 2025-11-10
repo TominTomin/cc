@@ -24,12 +24,7 @@
 
         bluyee {
             bindings = <&to 3>;
-            key-positions = <1 10>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <14 16>;
+            key-positions = <36 41>;
         };
 
         escy {
@@ -37,24 +32,9 @@
             key-positions = <19 21>;
         };
 
-        otoenter {
-            bindings = <&kp ENTER>;
-            key-positions = <26 28>;
-        };
-
-        oshift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <2 4>;
-        };
-
         ffef {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 15>;
-        };
-
-        dssd {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
         };
 
         sd {
@@ -62,14 +42,14 @@
             key-positions = <15 14>;
         };
 
-        sdfwsdv {
-            bindings = <&kp DEL>;
-            key-positions = <20 21>;
+        tonum {
+            bindings = <&to 1>;
+            key-positions = <38 40>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 14>;
+        tonav {
+            bindings = <&to 2>;
+            key-positions = <37 39>;
         };
     };
 
@@ -102,8 +82,8 @@
 
         nav {
             bindings = <
-&none  &to 7       &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)   &mt LG(Q) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &none
-&none  &trans      &kp LEFT      &kp DOWN   &kp RIGHT       &sl 5              &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &none
+&none  &to 0       &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)   &mt LG(Q) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &none
+&none  &trans      &kp LEFT      &kp DOWN   &kp RIGHT       &sl 0              &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &none
 &none  &bl BL_OFF  &sk LGUI      &sk LGUI   &sk LEFT_SHIFT  &sk LEFT_ALT       &kp K_MUTE         &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK  &none
                                  &mkp RCLK  &mkp MCLK       &mkp LCLK          &trans             &trans    &trans
             >;
@@ -124,33 +104,6 @@
 &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
 &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &kp F12  &kp F1  &kp F2  &kp F3  &trans  &trans
                         &trans  &trans  &trans     &trans   &trans  &trans
-            >;
-        };
-
-        symballs {
-            bindings = <
-&none   &kp LEFT_PARENTHESIS  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp TILDE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RPAR           &none
-&trans  &kp LEFT_BRACE        &kp DOLLAR       &kp PERCENT   &kp LGUI              &kp MINUS                &kp PLUS   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RIGHT_BRACE    &trans
-&none   &kp LEFT_BRACKET      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp UNDERSCORE           &kp EQUAL  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_BRACKET  &none
-                                               &trans        &trans                &trans                   &none      &trans           &trans
-            >;
-        };
-
-        layeroflay {
-            bindings = <
-&trans  &to 5   &to 4         &none     &to 2           &to 1       &to 1     &to 2           &none     &to 4         &to 5   &trans
-&trans  &trans  &sk LEFT_ALT  &sk LGUI  &sk LEFT_SHIFT  &sk LGUI    &sk LGUI  &sk LEFT_SHIFT  &sk LGUI  &sk LEFT_ALT  &trans  &kp BACKSPACE
-&trans  &trans  &trans        &trans    &trans          &trans      &trans    &trans          &trans    &trans        &trans  &trans
-                              &trans    &to 0           &trans      &trans    &to 0           &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans   &to 0           &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans     &trans   &kp LA(LEFT)  &kp UP    &kp LA(DOWN)  &to 0           &trans
-&kp DEL  &trans          &kp LEFT      &kp DOWN  &kp RIGHT      &trans     &trans   &kp LEFT      &kp DOWN  &kp RIGHT     &trans          &kp DEL
-&trans   &kp LEFT_SHIFT  &kp LG(X)     &trans    &kp LG(V)      &trans     &trans   &kp LG(X)     &trans    &kp LG(V)     &kp LEFT_SHIFT  &trans
-                                       &trans    &trans         &kp RET    &kp RET  &trans        &trans
             >;
         };
     };
