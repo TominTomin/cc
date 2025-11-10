@@ -65,7 +65,7 @@
 
             bindings = <
 &none  &kp Q        &kp W       &kp E             &kp R             &kp T             &kp Y                 &kp U              &kp I                &kp O       &kp P           &none
-&none  &mt LCTRL A  &mt LALT S  &mt LGUI D        &mt F LEFT_SHIFT  &kp G             &kp H                 &mt J RIGHT_SHIFT  &mt K RIGHT_COMMAND  &mt L RALT  &mt SEMI RCTRL  &none
+&none  &mt LCTRL A  &mt LALT S  &mt LGUI D        &mt LEFT_SHIFT F  &kp G             &kp H                 &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RALT L  &mt SEMI RCTRL  &none
 &none  &kp Z        &kp X       &kp C             &kp V             &kp B             &kp N                 &kp M              &mt SQT COMMA        &kp DOT     &kp SLASH       &none
                                 &mt CAPSLOCK TAB  &lt 2 ENTER       &mt LGUI SPACE    &mt LEFT_SHIFT ENTER  &lt 1 BACKSPACE    &kp ESCAPE
             >;
