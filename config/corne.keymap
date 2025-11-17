@@ -13,6 +13,11 @@
 
 &sk { release-after-ms = <3000>; };
 
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <220>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
