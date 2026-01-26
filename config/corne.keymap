@@ -6,10 +6,8 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &sk { release-after-ms = <3000>; };
 
@@ -32,34 +30,9 @@
             key-positions = <36 41>;
         };
 
-        escy {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 21>;
-        };
-
-        ffef {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 15>;
-        };
-
-        sd {
-            bindings = <&kp DEL>;
-            key-positions = <15 14>;
-        };
-
         tonum {
             bindings = <&to 1>;
             key-positions = <38 40>;
-        };
-
-        tonav {
-            bindings = <&to 2>;
-            key-positions = <37 39>;
-        };
-
-        oesc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 14>;
         };
     };
 
@@ -74,10 +47,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q        &kp W       &kp E             &kp R             &kp T             &kp Y                 &kp U              &kp I                &kp O       &kp P                   &none
-&none  &mt LCTRL A  &mt LALT S  &mt LGUI D        &mt LEFT_SHIFT F  &kp G             &kp H                 &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RALT L  &mt RIGHT_CONTROL SEMI  &none
-&none  &kp Z        &kp X       &kp C             &kp V             &kp B             &kp N                 &kp M              &mt SQT COMMA        &kp DOT     &kp SLASH               &none
-                                &mt CAPSLOCK TAB  &lt 2 ENTER       &mt LGUI SPACE    &mt LEFT_SHIFT ENTER  &lt 1 BACKSPACE    &kp BACKSPACE
+&none  &mt ESCAPE Q  &kp W       &kp E               &kp R             &kp T          &kp Y                 &kp U              &kp I                &kp O       &mt ESCAPE P            &none
+&none  &mt LCTRL A   &mt LALT S  &mt LGUI D          &mt LEFT_SHIFT F  &kp G          &kp H                 &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RALT L  &mt RIGHT_CONTROL SEMI  &none
+&none  &kp Z         &kp X       &kp C               &kp V             &kp B          &kp N                 &kp M              &mt SQT COMMA        &kp DOT     &kp SLASH               &none
+                                 &mt LG(DELETE) TAB  &lt 2 ENTER       &lt 4 SPACE    &mt LEFT_SHIFT ENTER  &lt 1 BACKSPACE    &kp BACKSPACE
             >;
         };
 
@@ -92,10 +65,10 @@
 
         nav {
             bindings = <
-&none  &to 0       &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)   &mt LG(Q) ENTER    &kp C_VOLUME_UP    &trans    &kp UP     &trans     &trans     &none
-&none  &trans      &kp LEFT      &kp DOWN   &kp RIGHT       &sl 0              &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &none
-&none  &bl BL_OFF  &sk LGUI      &sk LGUI   &sk LEFT_SHIFT  &sk LEFT_ALT       &kp K_MUTE         &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK  &none
-                                 &mkp RCLK  &mkp MCLK       &mkp LCLK          &trans             &trans    &trans
+&none  &kp LEFT_PARENTHESIS  &trans    &kp UP    &trans     &trans    &kp C_VOLUME_UP    &trans    &kp UP    &trans     &kp RIGHT_PARENTHESIS  &none
+&none  &kp LEFT_BRACKET      &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT_BRACKET      &none
+&none  &kp LEFT_BRACE        &trans    &trans    &trans     &trans    &kp K_MUTE         &trans    &trans    &trans     &kp RIGHT_BRACE        &none
+                                       &trans    &trans     &trans    &trans             &trans    &trans
             >;
         };
 
@@ -108,22 +81,15 @@
             >;
         };
 
-        fffkeys {
+        num_left {
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &kp F10  &kp F7  &kp F8  &kp F9  &trans  &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &kp F12  &kp F1  &kp F2  &kp F3  &trans  &trans
-                        &trans  &trans  &trans     &trans   &trans  &trans
+&trans  &mt ASTERISK SLASH  &kp N7  &kp N8  &kp N9  &kp N0           &mt ASTERISK SLASH    &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &mt MINUS MINUS     &kp N4  &kp N5  &kp N6  &kp LS(COLON)    &mt UNDERSCORE MINUS  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &mt PLUS EQUAL      &kp N1  &kp N2  &kp N3  &kp DOT          &mt PLUS EQUAL        &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                                    &trans  &trans  &trans           &trans                &trans  &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        testss {
-            if-layers = <1 2>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
