@@ -68,7 +68,7 @@
 &none  &kp LEFT_PARENTHESIS  &trans    &kp UP    &trans     &trans    &kp C_VOLUME_UP    &trans    &kp UP    &trans     &kp RIGHT_PARENTHESIS  &none
 &none  &kp LEFT_BRACKET      &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT_BRACKET      &none
 &none  &kp LEFT_BRACE        &trans    &trans    &trans     &trans    &kp K_MUTE         &trans    &trans    &trans     &kp RIGHT_BRACE        &none
-                                       &trans    &trans     &trans    &trans             &trans    &trans
+                                       &trans    &trans     &trans    &trans             &trans    &studio_unlock
             >;
         };
 
@@ -88,6 +88,14 @@
 &trans  &mt PLUS EQUAL      &kp N1  &kp N2  &kp N3  &kp DOT          &mt PLUS EQUAL        &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                     &trans  &trans  &trans           &trans                &trans  &trans
             >;
+        };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
 
